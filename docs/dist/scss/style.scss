@@ -1,0 +1,64 @@
+@import "vars";
+body{
+       h1,h2{
+              font-weight: bold;
+              z-index: 5;
+       }
+       h1{
+              font-size: 4em;
+       }
+       p{
+              z-index: 5;
+              font-size: 2rem;
+       }
+       h2{
+              font-size: 3rem; 
+       }
+       .second-header{
+              background-color: $main-color;
+              padding: 40px;
+              color: #FFF;
+              text-align: center;
+              margin-top: 3rem!important;
+              margin-bottom: 3rem!important;
+              h2{
+                     font-weight: 400 !important;
+
+              }
+
+       }
+}
+#hero-sec{
+       h1{
+              color: #FFF;
+       }
+       .header-sec{
+              background-image: linear-gradient(354deg, rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)),url('../images/hero-sec.jpg');
+              background-size: cover;
+              background-attachment: fixed;
+              height: 600px;
+              p{
+                     color: #FFF;
+              }
+       }
+}
+
+#shop-sec{
+       .contact-btn{
+              background-color: $main-color;
+              padding: 10px;
+              width: 50%;
+              text-align: center;
+              text-decoration: none;
+              font-size: 2rem;
+              margin-top: 13px;
+              border-radius: 15px;
+              font-weight: 700;
+              color: #FFF;
+              &:hover{
+                     color: #FFF;
+              }
+       }
+}
+
+
