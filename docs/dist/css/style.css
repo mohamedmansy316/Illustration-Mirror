@@ -10,6 +10,21 @@
   font-weight: 400;
   src: url("../fonts/Questv1-Regular.otf") format("truetype");
 }
+.colored-btn {
+  background-color: #CAB8D9;
+  padding: 12px 77px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-top: 13px;
+  border-radius: 15px;
+  font-weight: 700;
+  color: #FFF;
+}
+.colored-btn:hover {
+  color: #FFF;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -19,11 +34,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0d6efd;
+  background: #CAB8D9;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0d6efd;
+  background: #CAB8D9;
 }
 
 ::-webkit-scrollbar {
@@ -31,15 +46,15 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: #FFF;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0d6efd;
+  background: #CAB8D9;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0d6efd;
+  background: #CAB8D9;
 }
 
 #myBtn {
@@ -51,7 +66,7 @@
   border: none;
   outline: none;
   background-color: #CAB8D9;
-  color: white;
+  color: #FFF;
   cursor: pointer;
   padding: 10px 19px;
   border-radius: 10px;
@@ -151,6 +166,40 @@
     -o-transform: translate(-50%, -50%);
   }
 }
+.font-3 {
+  font-size: 3.4rem;
+}
+
+.font-2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+nav .navbar-nav li {
+  font-size: 27px;
+}
+nav .navbar-nav li.active {
+  background-color: #CAB8D9;
+  font-weight: 600;
+}
+nav .navbar-nav li.active a {
+  color: #FFF !important;
+}
+
+.about-sec, .contact-sec {
+  padding: 1rem 3rem 3rem 5rem;
+}
+.about-sec .about-hero-img, .contact-sec .about-hero-img {
+  margin: 0 auto;
+  height: 400px;
+  background-image: url("../images/gallery/1.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.about-sec .hero-h, .contact-sec .hero-h {
+  color: #000 !important;
+}
+
 body h1, body h2 {
   font-weight: bold;
   z-index: 5;
@@ -190,10 +239,21 @@ body .second-header h2 {
   color: #FFF;
 }
 
-#shop-sec .contact-btn {
+.contact-sec label {
+  font-size: 20px;
+  font-weight: 700;
+}
+.contact-sec input {
+  background-color: #d6d6d6;
+  padding: 10px 20px;
+  color: #000;
+  font-size: 20px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+.contact-sec .colored-btn {
   background-color: #CAB8D9;
-  padding: 10px;
-  width: 50%;
+  padding: 12px 77px;
   text-align: center;
   text-decoration: none;
   font-size: 2rem;
@@ -201,9 +261,94 @@ body .second-header h2 {
   border-radius: 15px;
   font-weight: 700;
   color: #FFF;
+  border: none;
 }
-#shop-sec .contact-btn:hover {
+.contact-sec .colored-btn:hover {
   color: #FFF;
+}
+.contact-sec .alert {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 7px 44px;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  border-radius: 44px;
+  display: none;
+}
+
+#reviews-sec {
+  height: 600px;
+  background-image: linear-gradient(354deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/gallery/5.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem;
+}
+#reviews-sec h3 {
+  color: #FFF;
+}
+#reviews-sec p, #reviews-sec a {
+  z-index: 5;
+}
+#reviews-sec p {
+  color: #FFF;
+}
+
+footer {
+  background-color: #CAB8D9;
+  padding: 5rem 5rem 0rem 5rem;
+  color: #FFF;
+}
+footer a {
+  text-decoration: none;
+  color: #FFF;
+}
+footer a:hover {
+  color: #FFF;
+}
+footer h3 {
+  font-weight: 400;
+}
+footer p, footer span {
+  font-size: 20px !important;
+}
+footer .copy-right {
+  text-align: right;
+}
+footer .contact-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 5px 0 5px 0;
+}
+
+.social-links .icon {
+  background-color: #b1a3bd;
+  padding: 12px;
+  border-radius: 62px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  margin: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  h1, h2 {
+    font-size: 2.5rem !important;
+  }
+
+  p {
+    font-size: 1.5rem !important;
+  }
+
+  #reviews-sec {
+    padding: 1rem !important;
+    height: auto !important;
+  }
+
+  footer {
+    padding: 1rem !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
