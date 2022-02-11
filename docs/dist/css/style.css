@@ -239,6 +239,30 @@ body .second-header h2 {
   color: #FFF;
 }
 
+#gallery-sec .images-container img {
+  margin: 15px;
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 992px) {
+  #gallery-sec .images-container img {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+#shop-sec img {
+  margin: 15px;
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 992px) {
+  #shop-sec img {
+    width: 400px;
+    height: 400px;
+  }
+}
+
 .contact-sec label {
   font-size: 20px;
   font-weight: 700;

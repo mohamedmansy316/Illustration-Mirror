@@ -31,9 +31,9 @@
 // Loader();
 
 //Our sketches serction slider script
-
-
-function gotowhatsapp() {
+let contactForm = document.querySelector('#contact-form');
+contactForm.onsubmit = function (e) {
+  e.preventDefault();
   var alert = document.querySelector('.alert');
   var name = document.getElementById("name");
   var email = document.getElementById("email");
@@ -42,16 +42,14 @@ function gotowhatsapp() {
   if(name.value == "" || email.value == "" || phone.value == "" ){
     alert.style.display = "block";
   }else{
-
     var name = document.getElementById("name").value;
     var phone = document.getElementById("phone").value;
     var email = document.getElementById("email").value;
     
-    var url = "https://wa.me/+201060928316?text="
+    var url = "https://wa.me/+201122292206?text="
     + "Name: " + name + "%0a"
     + "Phone: " + phone + "%0a"
     + "Email: " + email + "%0a"
-  
     window.open(url, '_blank').focus();
   }
 }
